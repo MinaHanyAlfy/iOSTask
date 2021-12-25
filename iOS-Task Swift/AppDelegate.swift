@@ -16,7 +16,8 @@ var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let applicationFrame = UIScreen.main.applicationFrame
         let window = UIWindow(frame: applicationFrame )
-          window.rootViewController = MoviesViewController()
+        let nav = UINavigationController(rootViewController: MoviesViewController())
+          window.rootViewController = nav
           window.makeKeyAndVisible()
           self.window = window
         // Override point for customization after application launch.

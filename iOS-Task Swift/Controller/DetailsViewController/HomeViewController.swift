@@ -11,11 +11,13 @@ class HomeViewController: UIViewController {
     let offWhite = UIColor(displayP3Red: 225/255, green: 224/255, blue: 224/255, alpha: 100/255)
     let cyan = UIColor(displayP3Red: 100/255, green: 172/255, blue: 181/255, alpha: 100/255)
     @IBOutlet weak var collectionView: UICollectionView!
+    var data: Films? 
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
         registCell()
+        print("data arrive \(data)")
 //        backgroundColor = .darkGray
         collectionView.backgroundColor = offWhite
         view.backgroundColor = offWhite

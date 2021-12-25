@@ -18,6 +18,7 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var moviesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Movies"
         moviesTableView.delegate = self
         moviesTableView.dataSource = self
         registCell()
@@ -38,22 +39,28 @@ class MoviesViewController: UIViewController {
 }
 extension MoviesViewController :UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return data?.count ?? 0
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MoviesTableViewCell", for: indexPath) as! MoviesTableViewCell
-        cell.textLabel?.text = "First"
-        cell.detailTextLabel?.text = "SubFirst"
+        let film = data?[indexPath.row]
+        cell.titleLabel?.text = film?.show?.name
+        cell.scoreLabel?.text = "\(film?.score ?? 0.0)"
         
         return cell
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = HomeViewController()
-        self.present(vc, animated: true, completion: nil)
+        vc.modalPresentationStyle = .fullScreen
+        vc.data = data
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.height / 6 - 8
+    }
 }
 extension MoviesViewController {
     private func fetchData(){
