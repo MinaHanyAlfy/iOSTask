@@ -20,6 +20,13 @@
 		7FCA6A9C277754E300959A3C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA6A9A277754E300959A3C /* HomeViewController.xib */; };
 		7FCA6AA02777560B00959A3C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A9E2777560B00959A3C /* HomeCollectionViewCell.swift */; };
 		7FCA6AA12777560B00959A3C /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA6A9F2777560B00959A3C /* HomeCollectionViewCell.xib */; };
+		7FDFD13A2777C13600C18E1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1382777C13600C18E1C /* MoviesViewController.swift */; };
+		7FDFD13B2777C13600C18E1C /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFD1392777C13600C18E1C /* MoviesViewController.xib */; };
+		7FDFD13E2777C75200C18E1C /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD13C2777C75200C18E1C /* MoviesTableViewCell.swift */; };
+		7FDFD13F2777C75200C18E1C /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFD13D2777C75200C18E1C /* MoviesTableViewCell.xib */; };
+		7FDFD1412777C8E800C18E1C /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1402777C8E800C18E1C /* EndPoint.swift */; };
+		7FDFD1432777C91400C18E1C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1422777C91400C18E1C /* Movies.swift */; };
+		7FDFD1452777C94A00C18E1C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1442777C94A00C18E1C /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		7FCA6A9A277754E300959A3C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		7FCA6A9E2777560B00959A3C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FCA6A9F2777560B00959A3C /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		7FDFD1382777C13600C18E1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		7FDFD1392777C13600C18E1C /* MoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
+		7FDFD13C2777C75200C18E1C /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
+		7FDFD13D2777C75200C18E1C /* MoviesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesTableViewCell.xib; sourceTree = "<group>"; };
+		7FDFD1402777C8E800C18E1C /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		7FDFD1422777C91400C18E1C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		7FDFD1442777C94A00C18E1C /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				7FCA6A962777541500959A3C /* Network.swift */,
+				7FDFD1402777C8E800C18E1C /* EndPoint.swift */,
+				7FDFD1422777C91400C18E1C /* Movies.swift */,
+				7FDFD1442777C94A00C18E1C /* ErrorMessage.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -105,8 +122,8 @@
 		7FCA6A98277754BD00959A3C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7FCA6A99277754E300959A3C /* HomeViewController.swift */,
-				7FCA6A9A277754E300959A3C /* HomeViewController.xib */,
+				7FDFD1372777C10400C18E1C /* MoviesViewController */,
+				7FDFD1362777C08600C18E1C /* DetailsViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,8 +133,28 @@
 			children = (
 				7FCA6A9E2777560B00959A3C /* HomeCollectionViewCell.swift */,
 				7FCA6A9F2777560B00959A3C /* HomeCollectionViewCell.xib */,
+				7FDFD13C2777C75200C18E1C /* MoviesTableViewCell.swift */,
+				7FDFD13D2777C75200C18E1C /* MoviesTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7FDFD1362777C08600C18E1C /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FCA6A99277754E300959A3C /* HomeViewController.swift */,
+				7FCA6A9A277754E300959A3C /* HomeViewController.xib */,
+			);
+			path = DetailsViewController;
+			sourceTree = "<group>";
+		};
+		7FDFD1372777C10400C18E1C /* MoviesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FDFD1382777C13600C18E1C /* MoviesViewController.swift */,
+				7FDFD1392777C13600C18E1C /* MoviesViewController.xib */,
+			);
+			path = MoviesViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCA6AA12777560B00959A3C /* HomeCollectionViewCell.xib in Resources */,
+				7FDFD13B2777C13600C18E1C /* MoviesViewController.xib in Resources */,
 				7FCA6A8B2777536400959A3C /* LaunchScreen.storyboard in Resources */,
+				7FDFD13F2777C75200C18E1C /* MoviesTableViewCell.xib in Resources */,
 				7FCA6A882777536400959A3C /* Assets.xcassets in Resources */,
 				7FCA6A832777536200959A3C /* Main.storyboard in Resources */,
 				7FCA6A9C277754E300959A3C /* HomeViewController.xib in Resources */,
@@ -195,12 +234,17 @@
 			files = (
 				7FCA6A94277753C200959A3C /* Model.swift in Sources */,
 				7FCA6A862777536200959A3C /* iOS_Task_Swift.xcdatamodeld in Sources */,
+				7FDFD1432777C91400C18E1C /* Movies.swift in Sources */,
+				7FDFD13E2777C75200C18E1C /* MoviesTableViewCell.swift in Sources */,
 				7FCA6A972777541500959A3C /* Network.swift in Sources */,
+				7FDFD1412777C8E800C18E1C /* EndPoint.swift in Sources */,
+				7FDFD1452777C94A00C18E1C /* ErrorMessage.swift in Sources */,
 				7FCA6A802777536200959A3C /* ViewController.swift in Sources */,
 				7FCA6A7C2777536200959A3C /* AppDelegate.swift in Sources */,
 				7FCA6A9B277754E300959A3C /* HomeViewController.swift in Sources */,
 				7FCA6A7E2777536200959A3C /* SceneDelegate.swift in Sources */,
 				7FCA6AA02777560B00959A3C /* HomeCollectionViewCell.swift in Sources */,
+				7FDFD13A2777C13600C18E1C /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

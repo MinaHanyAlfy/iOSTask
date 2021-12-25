@@ -107,7 +107,7 @@ enum TypeEnum: String, Codable {
     case scripted = "Scripted"
 }
 
-typealias AllElements = [All]
+typealias Films = [All]
 
 // MARK: - Encode/decode helpers
 

@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
         collectionView.dataSource = self
         registCell()
 //        backgroundColor = .darkGray
-        collectionView.backgroundColor = .clear
+        collectionView.backgroundColor = offWhite
         view.backgroundColor = offWhite
         // Do any additional setup after loading the view.
     }
