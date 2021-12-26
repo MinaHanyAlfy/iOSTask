@@ -29,12 +29,12 @@ class MoviesViewController: UIViewController {
         DispatchQueue.main.async {
             self.fetchData()
         }
-       
+        
     }
     func registCell(){
         moviesTableView.register(UINib.init(nibName: "MoviesTableViewCell", bundle: nil), forCellReuseIdentifier: "MoviesTableViewCell")
     }
-   
+    
     
 }
 extension MoviesViewController :UITableViewDataSource,UITableViewDelegate{
@@ -51,7 +51,8 @@ extension MoviesViewController :UITableViewDataSource,UITableViewDelegate{
         cell.runtimeLabel?.text = "\(film?.show?.runtime ?? 0)"
         let rate : Double = Double(film?.show?.rating?.average ?? 0 ) * 0.5
         cell.ratingView.rating = rate
-        
+        cell.navController = navigationController
+        cell.link = film?.show?.url ?? ""
         return cell
         
     }

@@ -21,6 +21,8 @@
 		7FDFD1412777C8E800C18E1C /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1402777C8E800C18E1C /* EndPoint.swift */; };
 		7FDFD1432777C91400C18E1C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1422777C91400C18E1C /* Movies.swift */; };
 		7FDFD1452777C94A00C18E1C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1442777C94A00C18E1C /* ErrorMessage.swift */; };
+		7FDFD14927780C5700C18E1C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD14727780C5700C18E1C /* WebViewController.swift */; };
+		7FDFD14A27780C5700C18E1C /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFD14827780C5700C18E1C /* WebViewController.xib */; };
 		9AFC1D3FE4FF2CBCE3DC1388 /* Pods_iOS_Task_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21D99B108FF2E312129BD87 /* Pods_iOS_Task_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		7FDFD1402777C8E800C18E1C /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		7FDFD1422777C91400C18E1C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		7FDFD1442777C94A00C18E1C /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		7FDFD14727780C5700C18E1C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7FDFD14827780C5700C18E1C /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		F21D99B108FF2E312129BD87 /* Pods_iOS_Task_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Task_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BC0F977BCB7501690B0A81 /* Pods-iOS-Task Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Task Swift.release.xcconfig"; path = "Target Support Files/Pods-iOS-Task Swift/Pods-iOS-Task Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +136,7 @@
 		7FCA6A98277754BD00959A3C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7FDFD14627780C1A00C18E1C /* WebViewViewController */,
 				7FDFD1372777C10400C18E1C /* MoviesViewController */,
 			);
 			path = Controller;
@@ -153,6 +158,15 @@
 				7FDFD1392777C13600C18E1C /* MoviesViewController.xib */,
 			);
 			path = MoviesViewController;
+			sourceTree = "<group>";
+		};
+		7FDFD14627780C1A00C18E1C /* WebViewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FDFD14727780C5700C18E1C /* WebViewController.swift */,
+				7FDFD14827780C5700C18E1C /* WebViewController.xib */,
+			);
+			path = WebViewViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +232,7 @@
 				7FDFD13B2777C13600C18E1C /* MoviesViewController.xib in Resources */,
 				7FCA6A8B2777536400959A3C /* LaunchScreen.storyboard in Resources */,
 				7FDFD13F2777C75200C18E1C /* MoviesTableViewCell.xib in Resources */,
+				7FDFD14A27780C5700C18E1C /* WebViewController.xib in Resources */,
 				7FCA6A882777536400959A3C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCA6A94277753C200959A3C /* Model.swift in Sources */,
+				7FDFD14927780C5700C18E1C /* WebViewController.swift in Sources */,
 				7FCA6A862777536200959A3C /* iOS_Task_Swift.xcdatamodeld in Sources */,
 				7FDFD1432777C91400C18E1C /* Movies.swift in Sources */,
 				7FDFD13E2777C75200C18E1C /* MoviesTableViewCell.swift in Sources */,
