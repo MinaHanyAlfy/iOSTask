@@ -94,7 +94,7 @@
                 <outlet property="titleLabel" destination="opq-Ms-B3J" id="yMn-gr-02Z"/>
                 <outlet property="watchNowButton" destination="uFG-SS-RRP" id="bBZ-sY-IEN"/>
             </connections>
-            <point key="canvasLocation" x="205.07246376811597" y="88.392857142857139"/>
+            <point key="canvasLocation" x="388" y="40"/>
         </tableViewCell>
     </objects>
     <resources>

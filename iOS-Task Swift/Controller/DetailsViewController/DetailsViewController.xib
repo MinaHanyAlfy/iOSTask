@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="iOS_Task_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="movieDescLabel" destination="RqL-Bu-8jz" id="000-II-Axp"/>
+                <outlet property="movieImageView" destination="xxW-Mc-Lk2" id="PA9-iS-dev"/>
+                <outlet property="movieTitleLabel" destination="Rfr-VJ-065" id="WUV-w6-2uz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xxW-Mc-Lk2">
+                    <rect key="frame" x="16" y="68" width="382" height="537.5"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Rfr-VJ-065">
+                    <rect key="frame" x="32" y="621.5" width="350" height="72"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descasdasdasdlkasda;sdk;askd;aksldk a;sdk;alsk d;alksd;lak s;dlk a;sdl a" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="RqL-Bu-8jz">
+                    <rect key="frame" x="32" y="701" width="350" height="145"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Rfr-VJ-065" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="32q-aS-4ov"/>
+                <constraint firstItem="RqL-Bu-8jz" firstAttribute="trailing" secondItem="Rfr-VJ-065" secondAttribute="trailing" id="AcY-54-nqv"/>
+                <constraint firstItem="xxW-Mc-Lk2" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" id="Dno-on-gfm"/>
+                <constraint firstItem="Rfr-VJ-065" firstAttribute="centerX" secondItem="xxW-Mc-Lk2" secondAttribute="centerX" id="EBR-lK-oNd"/>
+                <constraint firstItem="RqL-Bu-8jz" firstAttribute="top" secondItem="Rfr-VJ-065" secondAttribute="bottom" constant="7.5" id="Ep9-At-TYO"/>
+                <constraint firstItem="RqL-Bu-8jz" firstAttribute="leading" secondItem="Rfr-VJ-065" secondAttribute="leading" id="O0J-WD-465"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xxW-Mc-Lk2" secondAttribute="trailing" constant="16" id="Ofw-Ea-OuS"/>
+                <constraint firstItem="Rfr-VJ-065" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.08" id="PKd-I5-aLS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RqL-Bu-8jz" secondAttribute="bottom" constant="16" id="TrT-m0-VBa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rfr-VJ-065" secondAttribute="trailing" constant="32" id="Ykw-pp-ePP"/>
+                <constraint firstItem="Rfr-VJ-065" firstAttribute="top" secondItem="xxW-Mc-Lk2" secondAttribute="bottom" constant="16" id="eTO-06-ifb"/>
+                <constraint firstItem="xxW-Mc-Lk2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="hzU-M6-MuL"/>
+                <constraint firstItem="xxW-Mc-Lk2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="pWX-lE-j80"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="82.366071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

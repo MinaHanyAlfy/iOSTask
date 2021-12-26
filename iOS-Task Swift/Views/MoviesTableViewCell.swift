@@ -45,6 +45,7 @@ class MoviesTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         contentView.clipsToBounds = false
         contentView.layer.cornerRadius = 8
+        
         contentView.backgroundColor = offWhite
         movieImageView.layer.masksToBounds = true
         movieImageView.layer.cornerRadius = 8
@@ -62,6 +63,7 @@ class MoviesTableViewCell: UITableViewCell {
     @objc func linkTapped(){
         let vc = WebViewController()
         vc.link = link
+        vc.filmTitle = titleLabel.text
         navController?.pushViewController(vc, animated: true)
     }
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -21,9 +21,15 @@ class MoviesViewController: UIViewController {
         title = "Movies"
         moviesTableView.delegate = self
         moviesTableView.dataSource = self
+      
         registCell()
         
         // Do any additional setup after loading the view.
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        moviesTableView.clipsToBounds = false
+        moviesTableView.layer.cornerRadius = 8
     }
     override func viewWillAppear(_ animated: Bool) {
         DispatchQueue.main.async {
@@ -53,11 +59,26 @@ extension MoviesViewController :UITableViewDataSource,UITableViewDelegate{
         cell.ratingView.rating = rate
         cell.navController = navigationController
         cell.link = film?.show?.url ?? ""
+        let url = URL(string: film?.show?.image?.medium ?? "https://seeklogo.com/images/N/netflix-n-logo-0F1ED3EBEB-seeklogo.com.png")
+
+        DispatchQueue.global().async {
+            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            DispatchQueue.main.async {
+                cell.movieImageView.image = UIImage(data: data!)
+            }
+        }
         return cell
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let vc = DetailsViewController()
+        let film = data?[indexPath.row]
+        vc.title = film?.show?.name
+        vc.movieTitle = film?.show?.name
+        vc.desc = film?.show?.summary
+        vc.link = film?.show?.image?.original ?? "https://seeklogo.com/images/N/netflix-n-logo-0F1ED3EBEB-seeklogo.com.png"
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.frame.height / 4 - 8

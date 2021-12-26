@@ -12,8 +12,10 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     
     var link: String?
     var webView: WKWebView!
+    var filmTitle: String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = filmTitle
         let url = URL(string: link ?? "")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
