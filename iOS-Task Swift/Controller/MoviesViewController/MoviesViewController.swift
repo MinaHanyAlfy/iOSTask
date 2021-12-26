@@ -46,8 +46,10 @@ extension MoviesViewController :UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MoviesTableViewCell", for: indexPath) as! MoviesTableViewCell
         let film = data?[indexPath.row]
+        cell.premieredLabel.text = film?.show?.premiered
         cell.titleLabel?.text = film?.show?.name
-        cell.scoreLabel?.text = "\(film?.score ?? 0.0)"
+        cell.runtimeLabel?.text = "\(film?.score ?? 0.0)"
+        
         
         return cell
         
@@ -59,7 +61,7 @@ extension MoviesViewController :UITableViewDataSource,UITableViewDelegate{
         self.navigationController?.pushViewController(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.height / 6 - 8
+        return tableView.frame.height / 4 - 8
     }
 }
 extension MoviesViewController {
