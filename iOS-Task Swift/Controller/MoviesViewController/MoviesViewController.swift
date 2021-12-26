@@ -48,17 +48,15 @@ extension MoviesViewController :UITableViewDataSource,UITableViewDelegate{
         let film = data?[indexPath.row]
         cell.premieredLabel.text = film?.show?.premiered
         cell.titleLabel?.text = film?.show?.name
-        cell.runtimeLabel?.text = "\(film?.score ?? 0.0)"
-        
+        cell.runtimeLabel?.text = "\(film?.show?.runtime ?? 0)"
+        let rate : Double = Double(film?.show?.rating?.average ?? 0 ) * 0.5
+        cell.ratingView.rating = rate
         
         return cell
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = HomeViewController()
-        vc.modalPresentationStyle = .fullScreen
-        vc.data = data
-        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.frame.height / 4 - 8

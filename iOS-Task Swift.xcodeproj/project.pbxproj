@@ -9,17 +9,11 @@
 /* Begin PBXBuildFile section */
 		7FCA6A7C2777536200959A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A7B2777536200959A3C /* AppDelegate.swift */; };
 		7FCA6A7E2777536200959A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A7D2777536200959A3C /* SceneDelegate.swift */; };
-		7FCA6A802777536200959A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A7F2777536200959A3C /* ViewController.swift */; };
-		7FCA6A832777536200959A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA6A812777536200959A3C /* Main.storyboard */; };
 		7FCA6A862777536200959A3C /* iOS_Task_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A842777536200959A3C /* iOS_Task_Swift.xcdatamodeld */; };
 		7FCA6A882777536400959A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA6A872777536400959A3C /* Assets.xcassets */; };
 		7FCA6A8B2777536400959A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA6A892777536400959A3C /* LaunchScreen.storyboard */; };
 		7FCA6A94277753C200959A3C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A93277753C200959A3C /* Model.swift */; };
 		7FCA6A972777541500959A3C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A962777541500959A3C /* Network.swift */; };
-		7FCA6A9B277754E300959A3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A99277754E300959A3C /* HomeViewController.swift */; };
-		7FCA6A9C277754E300959A3C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA6A9A277754E300959A3C /* HomeViewController.xib */; };
-		7FCA6AA02777560B00959A3C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA6A9E2777560B00959A3C /* HomeCollectionViewCell.swift */; };
-		7FCA6AA12777560B00959A3C /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA6A9F2777560B00959A3C /* HomeCollectionViewCell.xib */; };
 		7FDFD13A2777C13600C18E1C /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1382777C13600C18E1C /* MoviesViewController.swift */; };
 		7FDFD13B2777C13600C18E1C /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FDFD1392777C13600C18E1C /* MoviesViewController.xib */; };
 		7FDFD13E2777C75200C18E1C /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD13C2777C75200C18E1C /* MoviesTableViewCell.swift */; };
@@ -27,24 +21,20 @@
 		7FDFD1412777C8E800C18E1C /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1402777C8E800C18E1C /* EndPoint.swift */; };
 		7FDFD1432777C91400C18E1C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1422777C91400C18E1C /* Movies.swift */; };
 		7FDFD1452777C94A00C18E1C /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDFD1442777C94A00C18E1C /* ErrorMessage.swift */; };
+		9AFC1D3FE4FF2CBCE3DC1388 /* Pods_iOS_Task_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21D99B108FF2E312129BD87 /* Pods_iOS_Task_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D36DE0BF29C061B51169DB6 /* Pods-iOS-Task Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Task Swift.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Task Swift/Pods-iOS-Task Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		7FCA6A782777536200959A3C /* iOS-Task Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Task Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCA6A7B2777536200959A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FCA6A7D2777536200959A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7FCA6A7F2777536200959A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7FCA6A822777536200959A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FCA6A852777536200959A3C /* iOS_Task_Swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Task_Swift.xcdatamodel; sourceTree = "<group>"; };
 		7FCA6A872777536400959A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FCA6A8A2777536400959A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FCA6A8C2777536400959A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FCA6A93277753C200959A3C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7FCA6A962777541500959A3C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		7FCA6A99277754E300959A3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		7FCA6A9A277754E300959A3C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		7FCA6A9E2777560B00959A3C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
-		7FCA6A9F2777560B00959A3C /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		7FDFD1382777C13600C18E1C /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		7FDFD1392777C13600C18E1C /* MoviesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
 		7FDFD13C2777C75200C18E1C /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
@@ -52,6 +42,8 @@
 		7FDFD1402777C8E800C18E1C /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		7FDFD1422777C91400C18E1C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		7FDFD1442777C94A00C18E1C /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		F21D99B108FF2E312129BD87 /* Pods_iOS_Task_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Task_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BC0F977BCB7501690B0A81 /* Pods-iOS-Task Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Task Swift.release.xcconfig"; path = "Target Support Files/Pods-iOS-Task Swift/Pods-iOS-Task Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AFC1D3FE4FF2CBCE3DC1388 /* Pods_iOS_Task_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16FDE2EA933797F8B41624E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D36DE0BF29C061B51169DB6 /* Pods-iOS-Task Swift.debug.xcconfig */,
+				F8BC0F977BCB7501690B0A81 /* Pods-iOS-Task Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3131297E3145D5FD56A21C66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F21D99B108FF2E312129BD87 /* Pods_iOS_Task_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7FCA6A6F2777536200959A3C = {
 			isa = PBXGroup;
 			children = (
 				7FCA6A7A2777536200959A3C /* iOS-Task Swift */,
 				7FCA6A792777536200959A3C /* Products */,
+				16FDE2EA933797F8B41624E5 /* Pods */,
+				3131297E3145D5FD56A21C66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +102,6 @@
 				7FCA6A922777537900959A3C /* Model */,
 				7FCA6A7B2777536200959A3C /* AppDelegate.swift */,
 				7FCA6A7D2777536200959A3C /* SceneDelegate.swift */,
-				7FCA6A7F2777536200959A3C /* ViewController.swift */,
-				7FCA6A812777536200959A3C /* Main.storyboard */,
 				7FCA6A872777536400959A3C /* Assets.xcassets */,
 				7FCA6A892777536400959A3C /* LaunchScreen.storyboard */,
 				7FCA6A8C2777536400959A3C /* Info.plist */,
@@ -123,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				7FDFD1372777C10400C18E1C /* MoviesViewController */,
-				7FDFD1362777C08600C18E1C /* DetailsViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,21 +140,10 @@
 		7FCA6A9D277755E600959A3C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7FCA6A9E2777560B00959A3C /* HomeCollectionViewCell.swift */,
-				7FCA6A9F2777560B00959A3C /* HomeCollectionViewCell.xib */,
 				7FDFD13C2777C75200C18E1C /* MoviesTableViewCell.swift */,
 				7FDFD13D2777C75200C18E1C /* MoviesTableViewCell.xib */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		7FDFD1362777C08600C18E1C /* DetailsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7FCA6A99277754E300959A3C /* HomeViewController.swift */,
-				7FCA6A9A277754E300959A3C /* HomeViewController.xib */,
-			);
-			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
 		7FDFD1372777C10400C18E1C /* MoviesViewController */ = {
@@ -164,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FCA6A8F2777536400959A3C /* Build configuration list for PBXNativeTarget "iOS-Task Swift" */;
 			buildPhases = (
+				59A6D5BF92D01BBFEDD277D2 /* [CP] Check Pods Manifest.lock */,
 				7FCA6A742777536200959A3C /* Sources */,
 				7FCA6A752777536200959A3C /* Frameworks */,
 				7FCA6A762777536200959A3C /* Resources */,
+				DD0CCF031D786A4246F4563A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,17 +215,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FCA6AA12777560B00959A3C /* HomeCollectionViewCell.xib in Resources */,
 				7FDFD13B2777C13600C18E1C /* MoviesViewController.xib in Resources */,
 				7FCA6A8B2777536400959A3C /* LaunchScreen.storyboard in Resources */,
 				7FDFD13F2777C75200C18E1C /* MoviesTableViewCell.xib in Resources */,
 				7FCA6A882777536400959A3C /* Assets.xcassets in Resources */,
-				7FCA6A832777536200959A3C /* Main.storyboard in Resources */,
-				7FCA6A9C277754E300959A3C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59A6D5BF92D01BBFEDD277D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Task Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0CCF031D786A4246F4563A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Task Swift/Pods-iOS-Task Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Task Swift/Pods-iOS-Task Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Task Swift/Pods-iOS-Task Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FCA6A742777536200959A3C /* Sources */ = {
@@ -239,11 +278,8 @@
 				7FCA6A972777541500959A3C /* Network.swift in Sources */,
 				7FDFD1412777C8E800C18E1C /* EndPoint.swift in Sources */,
 				7FDFD1452777C94A00C18E1C /* ErrorMessage.swift in Sources */,
-				7FCA6A802777536200959A3C /* ViewController.swift in Sources */,
 				7FCA6A7C2777536200959A3C /* AppDelegate.swift in Sources */,
-				7FCA6A9B277754E300959A3C /* HomeViewController.swift in Sources */,
 				7FCA6A7E2777536200959A3C /* SceneDelegate.swift in Sources */,
-				7FCA6AA02777560B00959A3C /* HomeCollectionViewCell.swift in Sources */,
 				7FDFD13A2777C13600C18E1C /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,14 +287,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7FCA6A812777536200959A3C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FCA6A822777536200959A3C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7FCA6A892777536400959A3C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -388,6 +416,7 @@
 		};
 		7FCA6A902777536400959A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D36DE0BF29C061B51169DB6 /* Pods-iOS-Task Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -416,6 +445,7 @@
 		};
 		7FCA6A912777536400959A3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BC0F977BCB7501690B0A81 /* Pods-iOS-Task Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

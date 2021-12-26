@@ -1,0 +1,6 @@
+framework module Pods_iOS_Task_Swift {
+  umbrella header "Pods-iOS-Task Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

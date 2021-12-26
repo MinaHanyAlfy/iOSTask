@@ -47,9 +47,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNK-zm-w12">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNK-zm-w12" customClass="CosmosView" customModule="Cosmos">
                         <rect key="frame" x="105.5" y="148" width="223.5" height="44.5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
@@ -78,6 +89,7 @@
                 <outlet property="imageView" destination="xCA-7Q-oJu" id="Rr4-tr-jat"/>
                 <outlet property="movieImageView" destination="xCA-7Q-oJu" id="6KM-ev-oeM"/>
                 <outlet property="premieredLabel" destination="kMj-WU-rbb" id="z29-LI-ocv"/>
+                <outlet property="ratingView" destination="lNK-zm-w12" id="x7W-GR-EBV"/>
                 <outlet property="runtimeLabel" destination="ods-bk-j4H" id="uFR-T3-Xm2"/>
                 <outlet property="titleLabel" destination="opq-Ms-B3J" id="yMn-gr-02Z"/>
                 <outlet property="watchNowButton" destination="uFG-SS-RRP" id="bBZ-sY-IEN"/>

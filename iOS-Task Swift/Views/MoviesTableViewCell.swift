@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Cosmos
 class MoviesTableViewCell: UITableViewCell {
     let offWhite = UIColor(displayP3Red: 225/255, green: 224/255, blue: 224/255, alpha: 100/255)
     let cyan = UIColor(displayP3Red: 100/255, green: 172/255, blue: 181/255, alpha: 100/255)
@@ -24,7 +24,7 @@ class MoviesTableViewCell: UITableViewCell {
         }
     }
     @IBOutlet weak var premieredLabel: UILabel!
-   
+    @IBOutlet weak var ratingView: CosmosView!
     @IBOutlet weak var watchNowButton: UIButton!
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -34,7 +34,8 @@ class MoviesTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         watchNowButton.addTarget(self, action: #selector(linkTapped), for: .touchUpInside)
-        
+        ratingView.isUserInteractionEnabled = false
+        ratingView.settings.fillMode = .half
         // Initialization code
     }
     override func layoutSubviews() {
@@ -43,8 +44,7 @@ class MoviesTableViewCell: UITableViewCell {
         contentView.backgroundColor = offWhite
         movieImageView.layer.masksToBounds = true
         movieImageView.layer.cornerRadius = 8
-//        watchNowButton.clipsToBounds = false
-        
+        ratingView.backgroundColor = .clear
         watchNowButton.applyGradient(colours: [firstColor , secondColor])
         watchNowButton.layer.cornerRadius = 16
         
